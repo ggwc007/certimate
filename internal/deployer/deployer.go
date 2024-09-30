@@ -32,6 +32,7 @@ type DeployerOption struct {
 	AceessRecord *models.Record        `json:"-"`
 	Certificate  applicant.Certificate `json:"certificate"`
 	Variables    map[string]string     `json:"variables"`
+	constant     []string              `json:"constant"`
 }
 
 type Deployer interface {
